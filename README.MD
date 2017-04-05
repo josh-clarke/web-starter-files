@@ -7,7 +7,8 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
 1. Clone or download a ZIP file of the repo.
 2. Run `npm install` to install the necessary build components.
 3. Run `bower install` to install default project components.
-    * By default, includes jQuery
+    * Includes jQuery
+    * Components install to `./src/js/vendor/` **not** `./bower_components/`
 
 ## Default Setup
 
