@@ -23,7 +23,7 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
     * Includes jQuery `3.1.1`
     * Components install to `./src/js/vendor/` **not** `./bower_components/`
 
-**Note:** This assumes you have done [`npm install --global gulp-cli`](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) already and have basic Gulp knowledge. 
+**Note:** This assumes you have already done [`npm i -g gulp-cli`](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) and [`npm i -g bower`](https://bower.io/#install-bower). 
 
 ## Default Setup
 
@@ -88,6 +88,14 @@ By default, the following setup is used:
             └ _variables.scss
             └ _vertical-rhythm.scss
 ```
+## Saving New Components
+
+By default, the `.gitignore` file keeps the repo lean by ignoring your Bower library files (`./src/js/vendor`) and NodeJS modules (`./node_modules`). Use the following commands to keep your `bower.json` and `package.json` files up-to-date. When you clone the repo to a new directory or machine, just run the `npm install` and `bower install` commands.
+
+* Save new Bower libraries with `bower install <package> --save`
+    * Remove Bower libraries with `bower uninstall <package> --save`
+* Save new Gulp plugins or NodeJS modules with `npm i -D <package>`
+    * Remove Gulp plugins or NodeJS modules with `npm r -D <package>`
 
 ## Credits & License
 
