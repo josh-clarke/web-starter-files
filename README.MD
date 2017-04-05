@@ -82,6 +82,7 @@ By default, the following setup is used:
             └ _normalize-mixin.scss
             └ _variables.scss
             └ _vertical-rhythm.scss
+```
 
 ## Credits
 
