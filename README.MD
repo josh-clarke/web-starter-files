@@ -23,7 +23,7 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
     * Includes jQuery `3.1.1`
     * Components install to `./src/js/vendor/` **not** `./bower_components/`
 
-**Note:** This assumes you have done `npm -g install gulp-cli` already and have basic Gulp knowledge.  ([More info...](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md))
+**Note:** This assumes you have done [`npm install --global gulp-cli`](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) already and have basic Gulp knowledge. 
 
 ## Default Setup
 
