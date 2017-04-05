@@ -1,4 +1,4 @@
-# Web Starter Files
+# [Web Starter Filesf](https://github.com/josh-clarke/web-starter-files)
 
 These are my Gulp-based starter files for web projects. It is relatively simple and may not work for every use case. Please customize it as you require. 
 
@@ -7,19 +7,20 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
 1. Clone or download a ZIP file of the repo.
 2. Run `npm install` to install the necessary build components.
 3. Run `bower install` to install default project components.
-    * Includes jQuery
+    * Includes jQuery `3.1.1`
     * Components install to `./src/js/vendor/` **not** `./bower_components/`
 
 ## Features
 
-* Uses Gulp + Bower + NodeJS
+* Uses [Gulp](https://github.com/gulpjs/gulp) + [Bower](https://github.com/bower/bower) + [NodeJS](https://nodejs.org)
 * Automatically concatinates Bower JavaScript libraries
     * jQuery included by default 
-* SCSS and Autoprefixer (last 2 versions)
-    * Includes normalizr.scss library
-* Includes Modernizr Gulp plugin to automatically generate custom Modernizr file from JS files
+* Compressess CSS and JS files 
+* [SASS](https://www.npmjs.com/package/gulp-sass) (.scss) and [Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) (last 2 browser versions)
+    * Includes [normalizr.scss](https://github.com/JohnAlbin/normalize-scss) library
+* Includes [Modernizr Gulp plugin](https://www.npmjs.com/package/gulp-modernizr) to automatically generate custom Modernizr file from JS files
 * No JS lint - add your own if needed
-* Images optimized by default 
+* Images optimized by default with [imagemin](https://github.com/sindresorhus/gulp-imagemin)
 
 ## Default Setup
 
@@ -84,6 +85,8 @@ By default, the following setup is used:
             └ _vertical-rhythm.scss
 ```
 
-## Credits
+## Credits & License
 
-Partially based on work from the [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) project. Used under an [MIT license](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt).
+Partially based on work from the [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) project. 
+
+Released under an [MIT license](https://github.com/josh-clarke/web-starter-files/blob/master/LICENSE).
