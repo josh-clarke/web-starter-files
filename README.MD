@@ -19,6 +19,7 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
 * [SASS](https://www.npmjs.com/package/gulp-sass) (.scss) and [Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) (last 2 browser versions)
     * Includes [normalizr.scss](https://github.com/JohnAlbin/normalize-scss) library
 * Includes [Modernizr Gulp plugin](https://www.npmjs.com/package/gulp-modernizr) to automatically generate custom Modernizr file from JS files
+    * Does **not** include `html5shiv`
 * No JS lint - add your own if needed
 * Images optimized by default with [imagemin](https://github.com/sindresorhus/gulp-imagemin)
 
