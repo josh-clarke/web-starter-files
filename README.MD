@@ -1,4 +1,4 @@
-# [Web Starter Filesf](https://github.com/josh-clarke/web-starter-files)
+# [Web Starter Files](https://github.com/josh-clarke/web-starter-files)
 
 These are my Gulp-based starter files for web projects. It is relatively simple and may not work for every use case. Please customize it as you require. 
 
