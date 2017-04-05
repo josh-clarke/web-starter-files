@@ -10,6 +10,17 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
     * Includes jQuery
     * Components install to `./src/js/vendor/` **not** `./bower_components/`
 
+## Features
+
+* Uses Gulp + Bower + NodeJS
+* Automatically concatinates Bower JavaScript libraries
+    * jQuery included by default 
+* SCSS and Autoprefixer (last 2 versions)
+    * Includes normalizr.scss library
+* Includes Modernizr Gulp plugin to automatically generate custom Modernizr file from JS files
+* No JS lint - add your own if needed
+* Images optimized by default 
+
 ## Default Setup
 
 By default, the following setup is used:
@@ -18,8 +29,9 @@ By default, the following setup is used:
     * `./src` - Working directory
     * `./dist` - Production directory
         * This directory and its subfolders will not be created until the first `gulp` build command
-* Build Tool
-    * Gulp
+* GULP build tool
+    * `gulp` command for default build with LiveReload preview
+    * `gulp watch` command to build/copy css, js, html, images on save
 * CSS 
     * Written in SASS (.scss)
     * Autoprefixr (latest 2 browser versions)
@@ -29,9 +41,9 @@ By default, the following setup is used:
     * Bower component management
         * Installs component in `./src/js/vendor`
         * Concatinates to `./dist/js/lib/libs.js`
-        * JQuery already included
+        * JQuery already included (change in `bower.json`)
 * Images 
-    * Runs imagemin default compression on copy
+    * Runs imagemin default optmization (change in `gulpfile.js`)
 * HTML Template - index.html
     * Based on HTML5Boilerplate
     * CSS points to `./dist/css/main.css`
