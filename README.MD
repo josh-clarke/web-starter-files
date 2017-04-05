@@ -63,7 +63,7 @@ By default, the following setup is used:
 └ bower.json    
 └ dist/         # distribution folder
     └ css/      
-    └ images/   # you will need to create this - 'images' is expected name
+    └ images/   
     └ js/
         └ lib/  # bower components will be concatinated here.
 └ gulpfile.js   
@@ -71,7 +71,7 @@ By default, the following setup is used:
 └ src/          # working folder
     └ favicon.ico
     └ humans.txt
-    └ images/
+    └ images/   # you will need to create this - 'images' is expected name
     └ index.html
     └ js/
         └ main.js   # use this for custom scripts
