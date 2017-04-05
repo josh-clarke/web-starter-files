@@ -58,6 +58,7 @@ By default, the following setup is used:
 ## File Layout
 
 ```
+/
 └ .gitignore    
 └ .bowerrc      # bower component directory set to ./src/js/vendor
 └ bower.json    
