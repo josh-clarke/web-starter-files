@@ -2,16 +2,6 @@
 
 These are my Gulp-based starter files for web projects. It is relatively simple and may not work for every use case. Please customize it as you require. 
 
-## Getting Started
-
-1. Clone or download a ZIP file of the repo.
-2. Run `npm install` to install the necessary build components.
-3. Run `bower install` to install default project components.
-    * Includes jQuery `3.1.1`
-    * Components install to `./src/js/vendor/` **not** `./bower_components/`
-
-**Note:** This assumes you have Gulp [setup and use](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) knowledge already.
-
 ## Features
 
 * Uses [Gulp](https://github.com/gulpjs/gulp) + [Bower](https://github.com/bower/bower) + [NodeJS](https://nodejs.org)
@@ -24,6 +14,16 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
     * Does **not** include `html5shiv`
 * No JS lint - add your own if needed
 * Images optimized by default with [imagemin](https://github.com/sindresorhus/gulp-imagemin)
+
+## Getting Started
+
+1. Clone or download a ZIP file of the repo.
+2. Run `npm install` to install the necessary build components.
+3. Run `bower install` to install default project components.
+    * Includes jQuery `3.1.1`
+    * Components install to `./src/js/vendor/` **not** `./bower_components/`
+
+**Note:** This assumes you have Gulp [setup and use](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) knowledge already.
 
 ## Default Setup
 
