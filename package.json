@@ -1,0 +1,27 @@
+{
+  "name": "web-starter-files",
+  "description" : "A Gulp-based web starter file project.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-filter": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-modernizr": "latest",
+    "gulp-order": "latest",
+    "gulp-sass": "latest",
+    "gulp-size": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "main-bower-files": "latest",
+    "modernizr": "latest"
+  }
+}
