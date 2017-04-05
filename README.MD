@@ -16,6 +16,7 @@ By default, the following setup is used:
 * Working and Production directories
     * `./src` - Working directory
     * `./dist` - Production directory
+        * This directory and its subfolders will not be created until the first `gulp` build command
 * Build Tool
     * Gulp
 * CSS 
