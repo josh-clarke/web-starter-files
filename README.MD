@@ -90,6 +90,6 @@ By default, the following setup is used:
 
 ## Credits & License
 
-Partially based on work from the [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) project and [normalize.scss](https://github.com/JohnAlbin/normalize-scss). 
+Includes work from the [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) project and [normalize.scss](https://github.com/JohnAlbin/normalize-scss). 
 
 Released under an [MIT license](https://github.com/josh-clarke/web-starter-files/blob/master/LICENSE).
