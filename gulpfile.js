@@ -95,5 +95,6 @@ gulp.task('default', ['copy','images','sass','scripts','modernizr','connect']);
 gulp.task('watch', function(){
   gulp.watch(src + 'sass/**/*.scss', ['sass']);
   gulp.watch(src + '**/*.html', ['copy']);
+  gulp.watch(src + 'images/**/*', ['images']);
   gulp.watch(src + 'js/**/*.js', ['scripts']);
 })
