@@ -81,7 +81,7 @@ By default, the following setup is used:
         └ _normalize.scss   # import for normalizr library
         └ _variables.scss   # import for variables and normalizr overrides
         └ main.scss         # use this for custom styles
-        └ normalize/        # normalizr library files
+        └ normalize/        # normalize.scss library files
             └ _import-now.scss
             └ _normalize-mixin.scss
             └ _variables.scss
