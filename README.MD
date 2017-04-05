@@ -82,3 +82,7 @@ By default, the following setup is used:
             └ _normalize-mixin.scss
             └ _variables.scss
             └ _vertical-rhythm.scss
+
+## Credits
+
+Partially based on work from the [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) project. Used under an [MIT license](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt).
