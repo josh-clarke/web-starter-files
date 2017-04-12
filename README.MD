@@ -4,7 +4,7 @@
 ![GitHub Issues](https://img.shields.io/github/issues/josh-clarke/web-starter-files.svg)
 
 
-[![GitHub Forks](https://img.shields.io/github/forks/josh-clarke/web-starter-files.svg?style=social)](https://github.com/josh-clarke/web-starter-files#fork-destination-box)
+[![GitHub Forks](https://img.shields.io/github/forks/josh-clarke/web-starter-files.svg?style=social)](https://github.com/josh-clarke/web-starter-files)
 
 These are my Gulp-based starter files for web projects. It is relatively simple and may not work for every use case. Please customize it as you require.
 
