@@ -5,6 +5,7 @@ These are my Gulp-based starter files for web projects. It is relatively simple 
 ## Features
 
 * Uses [Gulp](https://github.com/gulpjs/gulp) + [Bower](https://github.com/bower/bower) + [NodeJS](https://nodejs.org)
+* Allows for HTML partial includes
 * Automatically concatinates Bower JavaScript libraries
     * jQuery included by default
 * Compressess CSS and JS files
