@@ -14,12 +14,25 @@ var dest = "dist/"; // production files
 // Copy unmodified files
 gulp.task('copy', function(){
   gulp.src([
-      src + '*', 
-      "!" + src + '*.{html,png,ico,txt}', 
-      src + '*.{html,png,ico,txt}'],
+      src + '*',
+      "!" + src + '*.{gif,png,ico,txt}',
+      src + '*.{gif,png,ico,txt}'],
       {
-        dot: true
+        dot: true  // Include hidden, i.e., .htaccess
     }).pipe(gulp.dest(dest));
+});
+
+// Include HTML partials and copy
+
+gulp.task('html', function(){
+  return gulp.src([
+			src + '/*.html',
+			src + '/partials/*.html'
+		])
+    .pipe(p.include())
+      .on('error', console.log)
+    .pipe(gulp.dest(dest))
+		.pipe(p.connect.reload());
 });
 
 // Optimize Images
@@ -30,18 +43,21 @@ gulp.task('images', function () {
       interlaced: true
     })))
     .pipe(gulp.dest('dist/images'))
-    .pipe(p.size({title: 'images'}));
+    .pipe(p.size({title: 'images'}))
+		.pipe(p.connect.reload());
 });
 
-// CSS SASS Preprocessing 
+// CSS SASS Preprocessing
 // + Autoprefixer Postprocessing
 gulp.task('sass', function() {
   gulp.src(src + 'scss/main.scss')
     .pipe(p.sass({outputStyle: 'expanded'}))
+			.on('error', console.log)
     .pipe(p.autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
+			.on('error', console.log)
     .pipe(gulp.dest(dest + 'css'))
     .pipe(p.connect.reload())
 
@@ -74,7 +90,7 @@ gulp.task('scripts', function() {
 // Add needed Modernizr features
 gulp.task('modernizr', function() {
   gulp.src([
-      dest + 'js/*.js', 
+      dest + 'js/*.js',
       dest + 'js/lib/*.js'
     ]).pipe(p.modernizr())
     .pipe(gulp.dest(dest + 'js/lib'))
@@ -90,11 +106,11 @@ gulp.task('connect', function() {
 
 // Run Tasks
 
-gulp.task('default', ['copy','images','sass','scripts','modernizr','connect']);
+gulp.task('default', ['copy','html','images','sass','scripts','modernizr','connect']);
 
 gulp.task('watch', function(){
   gulp.watch(src + 'sass/**/*.scss', ['sass']);
-  gulp.watch(src + '**/*.html', ['copy']);
+  gulp.watch([src + '/*.html', src + '/partials/*.html'], ['html']);
   gulp.watch(src + 'images/**/*', ['images']);
   gulp.watch(src + 'js/**/*.js', ['scripts']);
 })
