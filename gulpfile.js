@@ -106,11 +106,11 @@ gulp.task('connect', function() {
 
 // Run Tasks
 
-gulp.task('default', ['copy','html','images','sass','scripts','modernizr','connect']);
-
 gulp.task('watch', function(){
-  gulp.watch(src + 'sass/**/*.scss', ['sass']);
+  gulp.watch(src + 'scss/**/*.scss', ['sass']);
   gulp.watch([src + '/*.html', src + '/partials/*.html'], ['html']);
   gulp.watch(src + 'images/**/*', ['images']);
   gulp.watch(src + 'js/**/*.js', ['scripts']);
-})
+});
+
+gulp.task('default', ['copy','html','images','sass','scripts','modernizr','connect','watch']);
